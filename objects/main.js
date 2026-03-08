@@ -1,13 +1,34 @@
-class BankAccount {
-    constructor(balance) {
-        this.balance = balance
+class CryptoWallet {
+    #balance;
+
+    //made constructor
+    constructor(balance){
+        this.#balance = balance
     }
 
-    deposit(){
-        console.log("Deposit balance",this.balance);
+    deposit(money){
+        if(money<=0){
+            throw new Error("Negative number !!!")
+        }
+        this.#balance +=money
+    }
+    withdraw(money){
+        if(money>=this.#balance){
+            throw new Error("balance exceed");
+        }
+        this.#balance -=money
+    }
+
+    getBalance(){
+        return this.#balance
+        
     }
 }
 
-const b1 = new BankAccount(5000);
-b1.deposit()
+const wallet1 = new CryptoWallet(50000);
 
+wallet1.getBalance()
+wallet1.deposit(1000)
+wallet1.withdraw(2000)
+
+wallet1.getBalance()
