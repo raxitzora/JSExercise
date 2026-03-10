@@ -54,3 +54,28 @@
 // test()
 // console.log(user);
 
+
+// let a = 10;
+
+// {
+//     let a = 20;
+//     console.log(a);
+// }
+
+// console.log(a);
+
+
+let x = 1;
+
+function test() {
+  let x = 2;
+
+  function inner() {
+    let x = 3;
+    console.log(x);
+  }
+
+  inner();
+}
+
+test();
