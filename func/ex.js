@@ -14,3 +14,15 @@
 //     console.log(x);
     
 // }
+
+
+function loginUser(username,password){
+    if(!username || !password){
+        return "Please fill all fields"
+    }
+    return `Your username is ${username} and your password is ${password}`
+}
+
+
+console.log(loginUser("raxit","asd"));
+
