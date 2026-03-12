@@ -1,15 +1,29 @@
-function one(){
-    const username = "raxit";
+// function one(){
+//     const username = "raxit";
 
-    function two(){
-        const website= "youtube"
-        console.log(username);
+//     function two(){
+//         const website= "youtube"
+//         console.log(username);
         
-    }
-    console.log(website);
-    two()
+//     }
+//     console.log(website);
+//     two()
+    
+// }
+
+
+// one()
+
+let name = "raxit";
+function hello(){
+    console.log(name);
+    
+    
+}
+hello()
+function test(){
+    let age = 24;
+    console.log(age);
     
 }
 
-
-one()
