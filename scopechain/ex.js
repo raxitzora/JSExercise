@@ -1,5 +1,15 @@
-if(true){
-    var a = 5;
+function one(){
+    const username = "raxit";
+
+    function two(){
+        const website= "youtube"
+        console.log(username);
+        
+    }
+    console.log(website);
+    two()
+    
 }
 
-console.log(a);
+
+one()
