@@ -16,10 +16,10 @@ const myobject = {
     "name3":"alice"
 }
 
+const letter = ['a','b','c','d'];
 
-for (const key in myobject) {
-    console.log(myobject[key]);
+letter.forEach((item)=>(
+    console.log(item)
     
-    
-    
-}
+))
+
