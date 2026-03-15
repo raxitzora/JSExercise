@@ -33,12 +33,36 @@
 // }
 // x();
 
-function clickHandler(color){
+// function clickHandler(color){
 
-    return function colorChanger(){
-        console.log(`Color changed ${color}`);
-    }
+//     return function colorChanger(){
+//         console.log(`Color changed ${color}`);
+//     }
+// }
+// const change = clickHandler("red")
+// console.log(change);
+
+
+
+// function x(){
+//     var a= 10;
+//     function y(){
+//         console.log(a);
+//     }
+//     y();
+// }
+// x()
+
+
+function outer() {
+  let x = 10;
+
+  function inner() {
+    console.log(x);
+  }
+
+  return inner;
 }
-const change = clickHandler("red")
-console.log(change);
 
+const fn = outer();
+fn();
