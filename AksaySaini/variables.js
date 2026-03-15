@@ -65,17 +65,21 @@
 // console.log(a);
 
 
-let x = 1;
+// let x = 1;
 
-function test() {
-  let x = 2;
+// function test() {
+//   let x = 2;
 
-  function inner() {
-    let x = 3;
-    console.log(x);
-  }
+//   function inner() {
+//     let x = 3;
+//     console.log(x);
+//   }
 
-  inner();
-}
+//   inner();
+// }
 
-test();
+// test();
+
+
+console.log(b);
+var b = 2
